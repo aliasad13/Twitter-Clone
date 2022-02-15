@@ -1,0 +1,218 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-weight: 900;
+    font-size: xx-large;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+
+}
+
+.navbar{
+    position: fixed;
+    width:100% ;
+    top: 0;
+    z-index: 10;
+}
+
+.yield-container{
+
+    margin: 30px;
+    margin-top: 94px;
+
+}
+
+.rounded {
+    border-radius: 0.25rem!important;
+    height: 95px;
+    width: 94px;
+    margin: 10px;
+}
+
+.card_image{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.card{
+    margin-bottom: 10px;
+    width:336px
+
+}
+
+.rounded {
+    border-radius: 0.25rem!important;
+    height: 76px;
+    width: 76px;
+    margin: 10px;
+}
+
+.card-body p{
+margin: 0;
+
+}
+
+.fa:before {
+    content: "\f040";
+    font-size: 20px;
+    margin-right: 20px;
+}
+.coloumns{
+
+    user-select: auto;
+    display: flex;
+    flex-direction: row;
+}
+.Suggestions{
+
+
+}
+
+.create{
+
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+ .field .form-control{
+
+    height: 133px;
+
+}
+
+ .btn-outline-secondary{
+
+     width: 147px;
+     /* border-bottom-right-radius: 82px; */
+     border-top-right-radius: 1px;
+    background-color: #0073F8;
+     color: white;
+     box-shadow: 0 0px 5px 0px black;
+ }
+
+.list-group{
+    width: 350px;
+}
+
+.list-group-item{
+    user-select: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.list-group-item .rounded{
+
+    border-radius: 0.25rem;
+    height: 56px;
+    width: 56px;
+    margin: 10px;
+}
+
+.feed{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.create_tweet{
+
+    width: 700px;
+    margin-right: 50px;
+}
+.create-btn-field{
+
+    width: 100%;
+
+    margin-left: 30px;
+display: flex;
+justify-content: center;
+    margin-right: 20px;
+}
+
+
+
+.form-control{
+    width: 640px;
+}
+.create-btn{display: flex;
+
+justify-content: center;
+
+}
+
+
+.collapse .navbar-collapse{
+
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;
+
+
+}
+
+.me-auto{
+
+    margin-right: 0!important;
+
+
+}
+
+.form-group{
+
+    margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+
+a{
+
+    text-decoration: none;
+    color: chocolate;
+}
+.name-username{
+    user-select: auto;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 9px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.home{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+}

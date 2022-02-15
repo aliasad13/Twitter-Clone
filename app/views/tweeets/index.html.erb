@@ -1,0 +1,63 @@
+<!--<p id="notice" class="alert alert-warning alert-dismissible fade show"><%#= notice %>-->
+<!--  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
+<!--  </p>-->
+
+<section class="section">
+
+<div class="coloumns">
+<div class="feed">
+  <%= render 'feed' %>
+</div>
+<% if user_signed_in? %>
+  <div class="create_tweet ">
+
+    <%= render 'tweeets/form' %>
+
+  </div>
+
+
+  <div class="Suggestions">
+  <%= render 'suggestions' %>
+  </div>
+
+  <% else %>
+    <div class="home">
+  <%= render 'home' %>
+    </div>
+  <% end %>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  <tbody>-->
+    <%# @tweeets.each do |tweeet| %>
+<!--      <tr>-->
+<!--        <td><%#= tweeet.tweeet %></td>-->
+<!--        <td><%#= link_to 'Show', tweeet %></td>-->
+<!--        <td><%#= link_to 'Edit', edit_tweeet_path(tweeet) %></td>-->
+<!--        <td><%#= link_to 'Destroy', tweeet, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+<!--      </tr>-->
+    <%# end %>
+<!--  </tbody>-->
+<!--</table>-->
+
+<!--<br>-->
+
+<%#= link_to 'New Tweeet', new_tweeet_path %>

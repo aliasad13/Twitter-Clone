@@ -1,0 +1,40 @@
+<div class="form-adjuster">
+
+<% @tweeets.each do |tweeet| %>
+
+<div class="card" style="max-width: 25rem;">
+  <div class="card_image">
+    <img src="<%= asset_path('image1.png') %>" class="rounded float-start" alt="...">
+    <div class="name-username">
+    <h5 class="card-title"><%= tweeet.user.name %></h5>
+
+    <p><%=tweeet.user.username %></p>
+    </div>
+
+  </div>
+
+    <div class="card-body">
+
+
+        <p><%= tweeet.tweeet %></p>
+      <br>
+
+
+
+      <!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+
+<% if user_signed_in? %>
+      <div class="icons">
+        <%= link_to ('<i class="fa fa-link"></i>').html_safe, tweeet  %>
+        <%= link_to ('<i class="fa fa-pencil"></i>').html_safe, edit_tweeet_path(tweeet)  %>
+        <%= link_to ('<i class="fa fa-trash"></i>').html_safe, tweeet,method: :delete, data: { confirm: 'Are you sure?' }  %>
+
+      </div>
+<% end %>
+  </div>
+
+
+</div>
+
+<% end %>
+</div>
